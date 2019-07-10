@@ -10,12 +10,11 @@ import org.springframework.stereotype.Component;
 @Mapper
 @Component
 public interface UserDAO {
-    // 注意空格
-    String TABLE_NAME = " user ";
-    String INSERT_FIELDS = " name, password, salt, head_url ";
-    String SELECT_FIELDS = " id, " + INSERT_FIELDS;
+    String TABLE_NAME = "user";
+    String INSET_FIELDS = " name, password, salt, head_url ";
+    String SELECT_FIELDS = " id, name, password, salt, head_url";
 
-    @Insert({"insert into ", TABLE_NAME, "(", INSERT_FIELDS,
+    @Insert({"insert into ", TABLE_NAME, "(", INSET_FIELDS,
             ") values (#{name},#{password},#{salt},#{headUrl})"})
     int addUser(User user);
 

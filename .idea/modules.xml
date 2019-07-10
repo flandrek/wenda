@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/wenda.iml" filepath="$PROJECT_DIR$/.idea/wenda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wenda.iml" filepath="$PROJECT_DIR$/wenda.iml" />
     </modules>
   </component>
 </project>
